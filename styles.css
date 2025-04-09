@@ -1,0 +1,306 @@
+/* ------------------------ */
+/* 1. Body - Fonte e Base   */
+/* ------------------------ */
+body {
+  background-color: #121212; /* Preto Profundo */
+  color: #f0f0f0; /* Branco Neon */
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* ------------------------ */
+/* 2. Header                */
+/* ------------------------ */
+header {
+  background: linear-gradient(145deg, #1e1e2e, #121212);
+  color: #00ffea; /* Verde-limão Neon */
+  text-align: center;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  border: 2px solid #3533cd; /* Azul Neon */
+  border-radius: 16px;
+  box-shadow: 0 0 15px #00ffea, 0 0 40px #00ffea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: neonPulse 4s ease-in-out infinite;
+}
+
+header img {
+  max-width: 300px;
+  padding: 10px;
+  margin: 25px;
+  border-radius: 60rem;
+  border: 1px solid #7e33cd;
+  box-shadow: 0 0 15px #00ffea, 0 0 40px #00ffea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: neonPulse 4s ease-in-out infinite;
+}
+header:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #e100ff, 0 0 40px #00ffea;
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 15px #00ffea, 0 0 40px #00ffea;
+  }
+  50% {
+    box-shadow: 0 0 25px #e100ff, 0 0 60px #3533cd;
+  }
+  100% {
+    box-shadow: 0 0 15px #00ffea, 0 0 40px #00ffea;
+  }
+}
+
+.fade-in-neon {
+  font-family: "Audiowide", cursive;
+  font-size: 2.8rem;
+  color: #00ffea;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInNeon 2s ease-in-out forwards;
+  text-shadow: 0 0 6px #3533cd, 0 0 10px #00ffea;
+  line-height: 1.4;
+  padding: 0 20px; /* Garante espaçamento nas bordas menores */
+}
+
+@keyframes fadeInNeon {
+  0% {
+    opacity: 8;
+    text-shadow: 0 0 8px #3533cd, 0 0 16px #ea00ffc0, 0 0 24px #00ffea;
+  }
+
+  100% {
+    opacity: 5;
+    text-shadow: 0 0 8px #3533cd, 0 0 16px #ea00ffc0, 0 0 24px #00ffea;
+  }
+}
+
+.fade-in-sub {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  opacity: 0;
+  text-align: center;
+  animation: fadeInSub 2s ease-in-out 1.5s forwards; /* 1.5s de delay */
+  padding: 0 20px;
+  max-width: 700px;
+  margin: 20px auto 0;
+}
+
+@keyframes fadeInSub {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade: Tablets */
+@media (max-width: 768px) {
+  .fade-in-neon {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+}
+
+/* Responsividade: Celulares */
+@media (max-width: 480px) {
+  .fade-in-neon {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+}
+
+/* ------------------------ */
+/* 3. Navegação             */
+/* ------------------------ */
+header nav {
+  margin-top: 20px;
+  background-color: #1e1e2e;
+  padding: 10px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden; /* Limita o pseudo-elemento à área do nav */
+  animation: menuGlow 6s ease-in-out infinite;
+  box-shadow: 0 0 12px #3533cd, 0 0 25px #00ffea;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #00ffea;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+  color: #e100ff;
+  text-shadow: 0 0 5px #e100ff, 0 0 10px #7d33cd7e;
+}
+
+@keyframes navPulse {
+  0% {
+    box-shadow: 0 0 10px #3533cd;
+  }
+  50% {
+    box-shadow: 0 0 20px #7e33cd, 0 0 40px #e100ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #3533cd;
+  }
+}
+
+@keyframes menuGlow {
+  0% {
+    box-shadow: 0 0 10px #3533cd, 0 0 25px #00ffea;
+  }
+  50% {
+    box-shadow: 0 0 20px #7e33cd, 0 0 40px #e100ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #3533cd, 0 0 25px #00ffea;
+  }
+}
+
+/* ------------------------ */
+/* 4. Seções                */
+/* ------------------------ */
+section {
+  background-color: #1e1e2e;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 650px;
+  border: 2px solid #3533cd;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #3533cd, 0 0 30px #00ffea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #e100ff, 0 0 40px #00ffea;
+}
+
+section h2 {
+  font-family: "Oxanium", sans-serif;
+  color: #7e33cd;
+  border-bottom: 2px solid #00ffea;
+  padding-bottom: 5px;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Ícones ao lado dos textos */
+section ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  gap: 12px; /* Espaço entre imagem e texto */
+}
+
+/* Tamanho base dos ícones */
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito neon por categoria */
+.conhecimento-icon {
+  filter: drop-shadow(0 0 6px #3533cd); /* Azul Neon */
+}
+
+/* Responsividade: Tablets */
+@media (max-width: 768px) {
+  section ul li {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Responsividade: Celulares */
+@media (max-width: 480px) {
+  section ul {
+    padding-left: 10px;
+  }
+
+  section ul li {
+    font-size: 0.95rem;
+    gap: 10px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Efeitos por tipo de seção */
+.conhecimento-icon {
+  filter: drop-shadow(0 0 6px #3533cd); /* Azul Neon */
+}
+
+.contato-icon {
+  filter: drop-shadow(0 0 6px #00ffea); /* Verde-limão Neon */
+}
+
+.rede-icon {
+  filter: drop-shadow(0 0 6px #e100ff); /* Rosa Neon */
+}
+
+/* Efeito ao passar o mouse */
+section ul li:hover .icon {
+  transform: scale(1.2);
+}
+
+/* ------------------------ */
+/* 5. Links Gerais          */
+/* ------------------------ */
+a {
+  color: #00ffea;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e100ff;
+}
+
+/* ------------------------ */
+/* 6. Personalizações por ID */
+/* ------------------------ */
+#conhecimentos:hover,
+#formacao:hover,
+#contato:hover,
+#rede:hover {
+  box-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea;
+}

@@ -1,0 +1,37 @@
+🎨 Paleta de Cores Cyberpunk com Base no Azul #3533cd:
+
+Azul Neon (Principal): #3533cd|    #2f00ff
+
+Roxo Neon (Destaque): #7e33cd
+
+Rosa Neon (Contraste): #e100ff
+
+Verde-limão Neon (Acento): #00ffea
+
+Preto Profundo (Fundo): #121212
+
+Cinza Escuro (Detalhes): #1e1e2e
+
+Branco Neon (Texto): #f0f0f0
+--------------------------------------------------------------------
+🔥 Fontes Ideais para o Estilo Cyberpunk:
+
+Orbitron (Google Fonts) - Fonte geométrica e moderna, com um ar futurista.
+
+Exo 2 (Google Fonts) - Visual limpo e tecnológico.
+
+Rajdhani (Google Fonts) - Fonte robusta com curvas retas e estilo moderno.
+
+Audiowide (Google Fonts) - Toque retrô com estilo neon, ótimo para títulos.
+
+VT323 (Google Fonts) - Fonte monoespaçada com um toque de terminal.
+
+Oxanium (Google Fonts) - Neon e futurista, com ótima leitura.
+---------------------------------------------------------------------
+
+ Moderno e Tecnológico:
+Títulos e Cabeçalhos: Oxanium
+
+Textos e Parágrafos: Rajdhani
+
+Botões e Destaques: Orbitron
